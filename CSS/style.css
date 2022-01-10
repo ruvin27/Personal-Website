@@ -260,7 +260,7 @@ font-family: "Montserrat";
 .card{
     margin-bottom: 15px;
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
     justify-content: center;
     padding: 0px;
     margin: 10px;
@@ -301,9 +301,12 @@ font-family: "Montserrat";
 .card-img-top{
     width: 14rem;
     height: 14rem;
-    transform: translate(14%, 12%);
+    transform: translate(14%, 10%);
 }
 
+.card div a{
+  text-decoration: none;
+}
 
 .award-card{
     background-color: #212529;
