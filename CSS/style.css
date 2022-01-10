@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.navbar-nav li{
+    padding: 10px 25px;
+}
+
+.dpimage{
+    border-radius: 50%;
+    width: auto;
+    height: 400px;
+}
+
+
+.intro{
+    margin-top: 25%;
+}
+
+.intro button{
+  height: 50px;
+  width: 170px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 0px 4px 0px;
+}
+
+.intro button:hover{
+  background-color: #09D3DB;
+}
+
+.intro button:hover i{
+  transform: rotate(90deg);
+  transition: 0.2s ease-in-out;
+}
+
+.intro button h6{
+margin-right: 10px;
+float: left;
+font-family: "Montserrat";
+}
+
+.intro button i{
+  padding-top: 3px;
+  float: right;
+}
+
+.nav-button{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+}
+.section{
+    margin-top: 7%;
+}
+
+.aboutimg{
+    margin-top: 10%;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+.margin5{
+    margin-top: 5%;
+}
+
+.margin10{
+    margin-top: 10%;
+}
+
+.skillbox{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    color: aliceblue;
+    background-color: #212529;
+}
+
+.row .col-md-3:last-child{
+    margin-bottom: 5px;
+}
+
+.timeline-container {
+    /* min-height: 100vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    font-family: "Montserrat";
+  }
+  
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #09D3DB;
+  }
+  .timeline-content h6{
+    font-family: 'Montserrat';
+    color: #E31B6D;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 768px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 51.8%;
+      /* transform: translateX(-50%); */
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 0px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+      color: black;
+      font-weight: 900;
+
+    }
+    .timeline ul li:hover::before {
+      background-color: #09D3DB;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        /* left: 51.8%; */
+        /* transform: translateX(-50%); */
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+      }
+      .timeline ul li {
+        /* width: 50%; */
+        position: relative;
+        /* margin-bottom: 50px; */
+      }
+      .timeline ul li{
+        float: left;
+        clear: right;
+        /* transform: translateX(-30px); */
+        border-radius: 0px 20px 20px 20px;
+      }
+    .timeline-content .date {
+      color: white;
+    }
+
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+      }
+      .timeline ul li::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+      }
+      .timeline ul li:hover::before {
+        background-color: #09D3DB;
+      }
+
+      .card:last-child{
+        margin-bottom: 15px;
+    }
+    
+  }
+
+.card{
+    margin-bottom: 15px;
+    width: 27rem;
+    height: 16rem;
+}
+
+.card-img-top{
+    width: 25.5rem;
+    height: 13rem;
+    margin: 0;
+    padding: 0;
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+.award-card{
+    background-color: #212529;
+    width: 300px;
+    height: 200px;
+    padding-top: 3%;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: #212529;
+    color: white;
+}
+
+.linkedin{
+  color: #0e76a8;
+}
+
+.location{
+  color: #FD7E14;
+}
+
+.activities p{
+  font-family: "Montserrat";
+}
+.card-header{
+  font-family: "Montserrat";
+}
+
+.montserrat{
+  font-family: "Montserrat";
+}
+
+.playfair{
+  font-family: 'Work Sans', sans-serif;
+}
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-item .active {
+  color: #E31B6D;
+}
