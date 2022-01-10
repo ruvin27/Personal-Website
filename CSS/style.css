@@ -37,7 +37,7 @@ body{
 }
 
 .intro button:hover{
-  background-color: #09D3DB;
+  background-color: #e31b6ed2;
 }
 
 .intro button:hover i{
@@ -260,22 +260,50 @@ font-family: "Montserrat";
 .card{
     margin-bottom: 15px;
     width: 18rem;
-    height: 17rem;
+    height: 18rem;
     justify-content: center;
-    padding: 10px;
+    padding: 0px;
     margin: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+  transform: translateY(-5%);
+  transition: 0.4s ease-in-out;
+  border: 1px solid black;
+}
+
+.card div i{
+  position: relative;
+  bottom: 100px;
+  padding: 0px 10px;
+  opacity: 0;
+}
+
+.card div i:hover{
+  color: #E31B6D;
+}
+
+.card:hover div i{
+  opacity: 1;
+}
+
+.card:hover img{
+  opacity: 0.3;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover p{
+  color: #E31B6D;
+  transition: 0.4s ease-in-out;
 }
 
 .card-img-top{
     width: 14rem;
     height: 14rem;
+    transform: translate(14%, 12%);
 }
 
-.card a{
-  text-decoration: none;
-  color: black;
-}
 
 .award-card{
     background-color: #212529;
