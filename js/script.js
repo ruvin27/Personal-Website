@@ -2,7 +2,7 @@ window.onscroll = function() {runfun()};
 
 
 var navbar_links= document.querySelectorAll(".nav-link")
-console.log(navbar_links)
+
 function CheckAndToggle(ele)
 {   
     var element=document.getElementById(ele);
@@ -11,8 +11,6 @@ function CheckAndToggle(ele)
     if (element.offsetTop   < document.documentElement.scrollTop && document.documentElement.scrollTop< element.offsetTop+element.offsetHeight){
       element.classList.add('active')
 
-
-      console.log(navbar_links)
     navbar_links.forEach((link)=>{
       temp=link.href.split("#")
         
