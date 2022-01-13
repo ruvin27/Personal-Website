@@ -8,6 +8,12 @@
   scroll-behavior: smooth;
 }
 
+#home {
+  /* background-image: url('../bg.jpg');  */
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -24,7 +30,7 @@ body{
 
 
 .intro{
-    margin-top: 25%;
+    padding-top: 25%;
 }
 
 .intro button{
@@ -152,6 +158,9 @@ font-family: "Montserrat";
     letter-spacing: 2px;
   }
   @media only screen and (min-width: 768px) {
+    #home{
+      min-height: 600px;
+    }
     .timeline:before {
       content: "";
       position: absolute;
