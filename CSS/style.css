@@ -30,7 +30,7 @@ body{
 
 
 .intro{
-    padding-top: 25%;
+    padding-top: 10%;
 }
 
 .intro button{
@@ -40,6 +40,7 @@ body{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 0px 4px 0px;
+  transition: background-color ease-out 400ms;
 }
 
 .intro button:hover{
@@ -48,7 +49,6 @@ body{
 
 .intro button:hover i{
   transform: rotate(90deg);
-  transition: 0.2s ease-in-out;
 }
 
 .intro button h6{
@@ -60,6 +60,7 @@ font-family: "Montserrat";
 .intro button i{
   padding-top: 3px;
   float: right;
+  transition: transform ease-out 400ms;
 }
 
 .nav-button{
@@ -68,7 +69,7 @@ font-family: "Montserrat";
     bottom: 40px;
 }
 .section{
-    margin-top: 7%;
+    padding-top: 5%;
 }
 
 .aboutimg{
@@ -274,11 +275,11 @@ font-family: "Montserrat";
     padding: 0px;
     margin: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    transition: ease-out 400ms;
 }
 
 .card:hover{
   transform: translateY(-5%);
-  transition: 0.4s ease-in-out;
   border: 1px solid black;
 }
 
@@ -287,6 +288,8 @@ font-family: "Montserrat";
   bottom: 100px;
   padding: 0px 10px;
   opacity: 0;
+  transform: scale(0);
+  transition: opacity ease-out 400ms, transform ease-out 400ms;
 }
 
 .card div i:hover{
@@ -295,16 +298,21 @@ font-family: "Montserrat";
 
 .card:hover div i{
   opacity: 1;
+  transform: scale(1);
+}
+
+.card img{
+  opacity: 1;
+  transition: opacity ease-out 400ms;
 }
 
 .card:hover img{
   opacity: 0.3;
-  transition: 0.4s ease-in-out;
 }
 
 .card:hover p{
   color: #E31B6D;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-out;
 }
 
 .card-img-top{
@@ -328,6 +336,7 @@ font-family: "Montserrat";
     font-family: "Montserrat";
     color: white;
     margin-bottom: 20px;
+    transition: 0.4s ease-in-out;
 }
 
 .award-card div{
@@ -336,17 +345,17 @@ font-family: "Montserrat";
 
 .award-card:hover{
   transform: translateY(-10%);
-  transition: 0.4s ease-in-out;
 }
+
 
 .award-card:hover h5{
   opacity: 1;
-  transition: 0.4s ease-in-out;
 }
 
 .award-card div h5{
   margin-top: 5%;
   opacity: 0;
+  transition: 0.4s ease-in-out;
 }
 
 .footer{
@@ -382,4 +391,15 @@ font-family: "Montserrat";
 
 .navbar-dark .navbar-nav .nav-item .active {
   color: #E31B6D;
+}
+
+.fade-in{
+  opacity: 0;
+  transform: scale(0);
+  transition: 1000ms ease-in-out;
+}
+
+.fade-in.appear{
+  transform: scale(1);
+  opacity: 1;
 }
