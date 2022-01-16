@@ -28,9 +28,9 @@ const navLinks = document.querySelectorAll(".nav-link");
 console.log(sections);
 
 const navOptions = {
-  threshold: 0.6,
+  threshold: 0.3,
   root: null,
-  rootMargin: "-50px -200px",
+  rootMargin: "50px",
 };
 
 const activeOnScroll = new IntersectionObserver(function (entries, navOptions) {
