@@ -53,7 +53,7 @@ sections.forEach((section) => {
 });
 
 const navBgOptions = {
-  threshold : 0.5,
+  threshold : 0.3,
   rootMargin: "-150px"
 }
 
