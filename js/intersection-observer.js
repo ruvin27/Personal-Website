@@ -25,7 +25,6 @@ faders.forEach((fader) => {
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
-console.log(sections);
 
 const navOptions = {
   threshold: 0.3,
@@ -52,3 +51,27 @@ const activeOnScroll = new IntersectionObserver(function (entries, navOptions) {
 sections.forEach((section) => {
   activeOnScroll.observe(section);
 });
+
+const navBgOptions = {
+  threshold : 0.5,
+  rootMargin: "-150px"
+}
+
+const navbar = document.querySelector('nav');
+
+const onHome = new IntersectionObserver(function(entries, onHome){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      navbar.classList.add("onHome")
+      navbar.classList.remove("navbar-dark")
+      navbar.classList.remove("bg-dark")
+    }
+    else{
+      navbar.classList.add("navbar-dark")
+      navbar.classList.add("bg-dark")
+      navbar.classList.remove("onHome")
+    }
+    })  
+  }, navBgOptions);
+
+onHome.observe(sections[0]);
