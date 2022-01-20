@@ -1,7 +1,7 @@
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
-  threshold: 1,
+  threshold: 0,
 };
 
 const appearOnScroll = new IntersectionObserver(function (
@@ -12,6 +12,7 @@ const appearOnScroll = new IntersectionObserver(function (
     if (!entry.isIntersecting) {
       return;
     } else {
+      
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }
@@ -25,6 +26,7 @@ faders.forEach((fader) => {
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
+const navbar = document.querySelector('nav');
 
 const navOptions = {
   threshold: 0.3,
@@ -37,6 +39,7 @@ const activeOnScroll = new IntersectionObserver(function (entries, navOptions) {
     if (!entry.isIntersecting) {
       return;
     } else {
+      // Nav Active Changer
       navLinks.forEach((link) => {
         if (entry.target.id == link.getAttribute("href").slice(1)) {
           link.classList.add("active");
@@ -44,6 +47,17 @@ const activeOnScroll = new IntersectionObserver(function (entries, navOptions) {
           link.classList.remove("active");
         }
       });
+      //Home Navbar Bg Changer
+      if(entry.target.id == "home"){
+        navbar.classList.add("onHome")
+        navbar.classList.remove("navbar-dark")
+        navbar.classList.remove("bg-dark")
+      }
+      else{
+        navbar.classList.add("navbar-dark")
+        navbar.classList.add("bg-dark")
+        navbar.classList.remove("onHome")
+      }
     }
   });
 }, navOptions);
@@ -52,26 +66,19 @@ sections.forEach((section) => {
   activeOnScroll.observe(section);
 });
 
-const navBgOptions = {
-  threshold : 0.3,
-  rootMargin: "-150px"
-}
-
-const navbar = document.querySelector('nav');
-
-const onHome = new IntersectionObserver(function(entries, onHome){
+const awards = document.querySelectorAll(".award-card");
+const onAchievements = new IntersectionObserver(function(entries, onAchievements){
   entries.forEach(entry => {
-    if(entry.isIntersecting){
-      navbar.classList.add("onHome")
-      navbar.classList.remove("navbar-dark")
-      navbar.classList.remove("bg-dark")
-    }
-    else{
-      navbar.classList.add("navbar-dark")
-      navbar.classList.add("bg-dark")
-      navbar.classList.remove("onHome")
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry)
+      entry.target.classList.add("appear");
+      onAchievements.unobserve(entry.target);
     }
     })  
-  }, navBgOptions);
+  }, appearOptions);
 
-onHome.observe(sections[0]);
+  awards.forEach(award => {
+    onAchievements.observe(award);
+  })

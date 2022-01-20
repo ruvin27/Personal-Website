@@ -374,7 +374,14 @@ nav::after{
   font-family: "Montserrat";
   color: white;
   margin-bottom: 20px;
-  transition: 0.4s ease-in-out;
+  transition: 500ms ease-in-out;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.award-card.appear{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .award-card div {
