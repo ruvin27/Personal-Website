@@ -19,6 +19,11 @@
   background-color: rgb(238, 238, 238);
 }
 
+.onHome .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33, 37, 41, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: rgba(33, 37, 41, 1);
+}
+
 .onHome a {
   color: black;
 }
@@ -36,7 +41,7 @@ body {
   font-size: large;
 }
 
-nav::after{
+nav::after {
   content: "";
   height: 3px;
   width: 100%;
@@ -46,11 +51,10 @@ nav::after{
   display: block;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: none;
   color: #e31b6d;
 }
-
 
 .dpimage {
   border-radius: 50%;
@@ -139,7 +143,7 @@ nav::after{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0px;
   font-family: "Montserrat";
 }
 
@@ -243,6 +247,18 @@ nav::after{
   .timeline ul li:hover::before {
     background-color: #09d3db;
   }
+  .title::after {
+    display: block;
+    width: 8%;
+    height: 3px;
+    left: 46%;
+    margin-top: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+    content: "";
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -295,6 +311,18 @@ nav::after{
   .section {
     padding-top: 15%;
   }
+  .title::after {
+    display: block;
+    width: 30%;
+    height: 3px;
+    left: 35%;
+    margin-top: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+    content: "";
+  }
 }
 
 .card {
@@ -326,7 +354,7 @@ nav::after{
   color: #e31b6d;
 }
 
-.card i{
+.card i {
   color: white;
 }
 
@@ -345,7 +373,7 @@ nav::after{
 }
 
 .card:hover p {
-  color:#09d3db;
+  color: #09d3db;
   transition: 0.4s ease-in-out;
 }
 
@@ -359,7 +387,7 @@ nav::after{
   text-decoration: none;
 }
 
-.card i{
+.card i {
   padding: 0px 10px;
 }
 
@@ -379,7 +407,7 @@ nav::after{
   transform: translateY(100%);
 }
 
-.award-card.appear{
+.award-card.appear {
   opacity: 1;
   transform: translateY(0);
 }
