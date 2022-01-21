@@ -1,5 +1,4 @@
 const faders = document.querySelectorAll(".fade-in");
-
 const appearOptions = {
   threshold: 0,
 };
@@ -26,7 +25,6 @@ faders.forEach((fader) => {
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
-const navbar = document.querySelector('nav');
 
 const navOptions = {
   threshold: 0.3,
@@ -47,17 +45,6 @@ const activeOnScroll = new IntersectionObserver(function (entries, navOptions) {
           link.classList.remove("active");
         }
       });
-      //Home Navbar Bg Changer
-      if(entry.target.id == "home"){
-        navbar.classList.add("onHome")
-        navbar.classList.remove("navbar-dark")
-        navbar.classList.remove("bg-dark")
-      }
-      else{
-        navbar.classList.add("navbar-dark")
-        navbar.classList.add("bg-dark")
-        navbar.classList.remove("onHome")
-      }
     }
   });
 }, navOptions);
@@ -72,7 +59,6 @@ const onAchievements = new IntersectionObserver(function(entries, onAchievements
     if (!entry.isIntersecting) {
       return;
     } else {
-      console.log(entry)
       entry.target.classList.add("appear");
       onAchievements.unobserve(entry.target);
     }

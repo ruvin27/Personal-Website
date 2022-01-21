@@ -21,7 +21,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -62,8 +62,10 @@
             <div class="container col-lg-6 col-lg-offset-3">
                 <div class="text-center">
                     <div class="intro">
-                        <img src="./Images/ruvin-bg.png" alt="DP" class="dpimage">
+                        <!-- <img src="./Images/ruvin-bg.png" alt="DP" class="dpimage"> -->
                         <h2 style="margin-top: 20px;">Hey, I'm Ruvin Rodrigues</h2>
+                        <p style="margin-top: 2%; font-size: large;" class="playfair"><b> I'm a creative Software Developer!</b>
+                        </p>
                         <a href="#about">
                             <button class="margin5">
                                 <h6>View My Work</h6>
@@ -80,20 +82,18 @@
     <section id="about" class="section">
         <div class="container ">
             <div class="text-center">
-                <h2 class="card-header title">About Me</h2>
-                <p style="margin-top: 2%; font-size: large;" class="playfair"><b> I'm a creative Software Developer!</b>
-                </p>
+                <h2 class="title">About Me</h2>
             </div>
-            <div class="row" style="margin-top: 3%; font-family: 'Montserrat';">
-                <div class="col-md-4 text-center"><img src="./Images/profile.jpeg" class=" aboutimg" alt="DP"></div>
-                <div class="col-md-8">
-                    <p style="margin-top: 5%;">
+            <div class="row aboutme-card" style=" font-family: 'Montserrat';">
+                <div class="col-lg-3 col-md-6 text-center"><img src="./Images/1.jpeg" class=" aboutimg" alt="DP"></div>
+                <div class="col-lg-9 col-md-6" style="padding-right: 20px;">
+                    <p style="margin-top: 2%;">
                         Responsible, hardworking, dedicated, trustworthy and committed to work on new technologies and
                         projects. Constantly exploring newer boundaries of technologies and a continuous avid learner.
                         I love to take up new challenges and put in my best efforts to drive to best results.
                     </p>
-                    <h3 style="margin-top: 8%; color: #E31B6D;"><b>PROFILE</b></h3>
-                    <p>Currently pursing a Bachelor in Engineering Degree. My primary interests lies in development and
+                    <h3 style="margin-top: 4%; color: #E31B6D;"><b>PROFILE</b></h3>
+                    <p style="padding-right: 30px;">Currently pursing a Bachelor in Engineering Degree. My primary interests lies in development and
                         programming and working dominantly on Web Technologies.</p>
                     <div class="row" style="margin-top: 5%;">
                         <div class="col-sm-6">
@@ -123,7 +123,7 @@
                 </div>
             </div>
 
-            <h3 style="margin-top: 5%; color: #E31B6D;"><b>SKILLS</b></h3>
+            <h3 style="margin-top: 5%; color: #E31B6D;" class="text-center"><b>SKILLS</b></h3>
 
             <div class="row justify-content-center" style="margin-top: 2%;">
                 <div class="col-md-3 skillbox">
@@ -236,10 +236,10 @@
     <section id="resume" class="section">
         <div class="container">
             <div class="text-center">
-                <h2 class="card-header title">RESUME</h2>
-                <h5 style="margin-top: 2%; color: #E31B6D;" class="playfair">Here are my work experiences and education.
-                </h5>
-                <h3 style="margin-top: 3%;">Work Experience</h3>
+                <h2 class="title">RESUME</h2>
+                <p style="margin-top: 1%; color: rgba(0, 0, 0, 0.486);" class="playfair">Here are my work experiences and education.
+                </p>
+                <h3 style="margin-top: 1%;">Work Experience</h3>
             </div>
         </div>
 
@@ -314,10 +314,10 @@
     <section id="projects" class="section">
         <div class="container">
             <div class="text-center">
-                <h2 class="title card-header">Projects</h2>
+                <h2 class="title">Projects</h2>
             </div>
 
-            <div class="row margin5 justify-content-center">
+            <div class="row justify-content-center">
                 <div class="card col-lg-4 col-xs-12 text-center fade-in">
                     <img class="card-img-top" src="./Images/zenscape.png" alt="Card image cap">
                     <div>
@@ -414,15 +414,13 @@
     <section id="activities" class="section">
         <div class="container">
             <div class="text-center">
-                <div class="card-header">
                     <h2 class="title">Activites</h2>
-                </div>
-                <p style="margin-top: 2%; font-size: 25px;">My Positions During Undergraduate.</p>
-                <h6 style="margin-top: 1%; color: #E31B6D;" class="playfair">Summary of my leadership & extracurricular
+                <p style="margin-top: 1%; font-size: 25px;">My Positions During Undergraduate.</p>
+                <h6 style="color: rgba(0, 0, 0, 0.486);" class="playfair">Summary of my leadership & extracurricular
                     activities</h6>
                 <div class="activities">
 
-                    <h4 style="margin-top: 5%;"><b> Founder/Chairperson</b></h4>
+                    <h4 style="margin-top: 3%;"><b> Founder/Chairperson</b></h4>
                     <p> DBIT SevaTech <b> • </b> Aug 2020 - PRESENT</p>
                     <h4 style="margin-top: 3%;"><b> Co-Founder/Head of Operations</b></h4>
                     <p> FlockFlair <b> • </b> Jun 2020 - PRESENT</p>
@@ -438,9 +436,9 @@
     </section>
 
     <!-- Achievements -->
-    <section id="achievements" class="section">
-        <div class="container" style="padding: 10% 0px;">
-            <div class="text-center card-header">
+    <section id="achievements" class="section" style="padding: 5% 0;">
+        <div class="container">
+            <div class="text-center">
                 <h2 class="title">Achievements</h2>
             </div>
 
@@ -466,28 +464,26 @@
         <div class="container">
             <div class="text-center">
 
-                <div class="card-header">
                     <h2 class="title">Contact Me</h2>
-                </div>
 
-                <h1 style="margin-top: 3%; padding-top: 3%;">I'd Love To Connect With You.</h1>
-                <h5 class="playfair" style="color: #E31B6D; margin-bottom: 7%;">Let me get to know more about you.</h5>
+                <h2>I'd Love To Connect With You</h2>
+                <h5 class="playfair" style="color: rgba(0, 0, 0, 0.486); margin-bottom: 2%;">Let me get to know more about you!</h5>
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12" style="margin: 3% 0;">
                         <i class="fas fa-3x fa-location-arrow location"></i>
                         <h3 style="margin-top: 3%;">Where to find me</h3>
                         <h5>Mumabi, India</h5>
                     </div>
 
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12"  style="margin: 3% 0;">
                         <i class="fas fa-3x fa-envelope"></i>
                         <h3 style="margin-top: 3%;">Email Me at</h3>
                         <h5><a href="mailto:ruvin27@gmail.com" style="text-decoration: none;">ruvin27@gmail.com</a></h5>
                     </div>
 
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12"  style="margin: 3% 0;">
                         <i class="fab fa-3x fa-linkedin linkedin"></i>
                         <h3 style="margin-top: 3%;">Lets Connect!</h3>
                         <h5><a href="https://www.linkedin.com/in/ruvin-rodrigues/" target="_blank"
