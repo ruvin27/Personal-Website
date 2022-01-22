@@ -11,7 +11,6 @@ const appearOnScroll = new IntersectionObserver(function (
     if (!entry.isIntersecting) {
       return;
     } else {
-      
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }
@@ -54,17 +53,58 @@ sections.forEach((section) => {
 });
 
 const awards = document.querySelectorAll(".award-card");
-const onAchievements = new IntersectionObserver(function(entries, onAchievements){
-  entries.forEach(entry => {
+const onAchievements = new IntersectionObserver(function (
+  entries,
+  onAchievements
+) {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
       entry.target.classList.add("appear");
       onAchievements.unobserve(entry.target);
     }
-    })  
-  }, appearOptions);
+  });
+},
+appearOptions);
 
-  awards.forEach(award => {
-    onAchievements.observe(award);
-  })
+awards.forEach((award) => {
+  onAchievements.observe(award);
+});
+
+const titles = document.querySelectorAll(".title");
+const titleUnderlines = document.querySelectorAll(".title-underline");
+
+const onTitles = new IntersectionObserver(function (entries, onTitles) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("title-appear");
+      onTitles.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+titles.forEach((title) => {
+  onTitles.observe(title);
+});
+
+const onTitlesUnderlines = new IntersectionObserver(function (
+  entries,
+  onTitlesUnderlines
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("title-appear");
+      onTitlesUnderlines.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+titleUnderlines.forEach((underline) => {
+  onTitlesUnderlines.observe(underline);
+});

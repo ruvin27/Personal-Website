@@ -9,7 +9,7 @@
 }
 
 #home {
-  background-image: url('../Images/bg.jpg'); 
+  background-image: url("../Images/bg.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,10 +40,10 @@ body {
   overflow-x: hidden;
 }
 .navbar-nav li {
-  padding: 10px 25px;
+  padding: 5px 25px;
   font-size: large;
 }
-nav{
+nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 /* 
@@ -62,8 +62,17 @@ nav::after {
   color: #e31b6d;
 }
 
-.title{
-  padding: 10px;
+.title {
+  /* padding: 10px; */
+  transform: translateX(-50%);
+  opacity: 0;
+  margin-bottom: 5px;
+}
+
+.title.title-appear {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 700ms ease-in;
 }
 
 .dpimage {
@@ -83,7 +92,7 @@ nav::after {
   background-color: transparent;
   padding: 10px;
   border-radius: 10px;
-  /* box-shadow: 2px 0px 4px 0px; */
+  border: 1px solid white;
   transition: ease-in-out 500ms;
   color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -100,12 +109,13 @@ nav::after {
 
 .intro button h6 {
   margin-right: 10px;
+  margin-top: 4px;
   float: left;
   font-family: "Montserrat";
 }
 
 .intro button i {
-  padding-top: 3px;
+  padding-top: 5px;
   float: right;
   transition: transform ease-in-out 400ms;
 }
@@ -114,7 +124,7 @@ nav::after {
   padding-top: 5%;
 }
 
-.aboutme-card{
+.aboutme-card {
   margin-top: 20px;
   /* padding: 20px 30px 0 0; */
   padding-bottom: 15px;
@@ -124,8 +134,9 @@ nav::after {
 }
 
 .aboutimg {
-  margin-top: 5%;
-  height: 340px;
+  margin-top: 4%;
+  /* position: relative; */
+  height: 300px;
   padding: 10px;
   border-radius: 20px;
   /* border: 2px solid black; */
@@ -263,7 +274,7 @@ nav::after {
   .timeline ul li:hover::before {
     background-color: #09d3db;
   }
-  .title::after {
+  /* .title::after {
     display: block;
     width: 8%;
     height: 3px;
@@ -274,6 +285,24 @@ nav::after {
     justify-content: center;
     background-color: #212529;
     content: "";
+  } */
+
+  .title-underline.title-appear {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 500ms ease-in 300ms;
+  }
+
+  .title-underline {
+    width: 8%;
+    height: 3px;
+    background-color: #212529;
+    position: relative;
+    left: 46%;
+    opacity: 0;
+    transform: translateX(-500px);
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -348,14 +377,12 @@ nav::after {
   justify-content: center;
   padding: 0px;
   margin: 10px;
-  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   transition: ease-in-out 400ms;
   border-radius: 10px;
-  
 }
 
 .card:hover {
-  transform: translateY(-5%);
   background-color: #212529ab;
 }
 
@@ -419,9 +446,20 @@ nav::after {
   font-family: "Montserrat";
   color: white;
   margin-bottom: 20px;
-  transition: 500ms ease-in-out;
+  transition: 600ms ease-in-out;
   opacity: 0;
   transform: translateY(100%);
+}
+
+.award-card .card-content {
+  opacity: 0;
+  transform: rotateY(180deg);
+  display: block;
+}
+
+.award-card:hover .card-content {
+  opacity: 1;
+  transition: 500ms ease-in;
 }
 
 .award-card.appear {
@@ -434,16 +472,16 @@ nav::after {
 }
 
 .award-card:hover {
-  transform: translateY(-10%);
+  transform: rotateY(180deg);
 }
 
-.award-card:hover h5 {
-  opacity: 1;
+.award-card:hover div {
+  opacity: 0;
 }
 
 .award-card div h5 {
-  margin-top: 5%;
-  opacity: 0;
+  margin-top: 10px;
+  opacity: 1;
   transition: 0.4s ease-in-out;
 }
 
