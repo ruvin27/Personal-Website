@@ -137,7 +137,7 @@ nav::after {
 .aboutimg {
   margin-top: 4%;
   /* position: relative; */
-  height: 300px;
+  height: 315px;
   padding: 10px;
   border-radius: 20px;
   /* border: 2px solid black; */
@@ -199,7 +199,7 @@ nav::after {
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
-.timeline-content h1 {
+.timeline-content h2 {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
@@ -214,6 +214,7 @@ nav::after {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+  margin: 0;
 }
 .timeline-content .date {
   font-size: 12px;
@@ -522,6 +523,14 @@ nav::after {
 
 .activities p {
   font-family: "Montserrat";
+  font-size: 15px;
+}
+.activity{
+  margin-top: 15px;
+  padding: 10px;
+}
+.activity:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .card-header {
   font-family: "Montserrat";
