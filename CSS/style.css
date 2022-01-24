@@ -153,7 +153,7 @@ nav {
   background-color: #212529;
 }
 
-.skillbox p{
+.skillbox p {
   margin-top: 15px;
 }
 
@@ -196,12 +196,13 @@ nav {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   color: #09d3db;
 }
 .timeline-content .timeline-place {
   font-family: "Montserrat";
   color: #e31b6d;
+  font-weight: 500;
 }
 .timeline-content p {
   font-size: 16px;
@@ -340,7 +341,6 @@ nav {
     padding-top: 15%;
   }
 
-
   .title-underline.title-appear {
     transform: translateX(0);
     opacity: 1;
@@ -379,7 +379,6 @@ nav {
   opacity: 1;
   transform: scale(1);
 }
-
 
 .project-card img {
   opacity: 1;
@@ -462,11 +461,11 @@ nav {
   font-family: "Montserrat";
   /* font-size: 15px; */
 }
-.activity{
+.activity {
   margin-top: 15px;
   padding: 10px;
 }
-.activity:hover{
+.activity:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .card-header {
@@ -499,7 +498,7 @@ nav {
   opacity: 1;
 }
 
-.project-card{
+.project-card {
   width: 16rem;
   height: 17.5rem;
   padding: 20px 28px;
@@ -508,12 +507,12 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.project-card img{
-  height: auto; 
+.project-card img {
+  height: auto;
   width: 200px;
 }
 
-.project-links{
+.project-links {
   position: relative;
   bottom: 110px;
   left: 50px;
@@ -522,19 +521,19 @@ nav {
   transition: 400ms ease-in;
 }
 
-.project-links a{
+.project-links a {
   padding: 0 10px;
   text-decoration: none;
 }
 
-.project-card p{
+.project-card p {
   position: relative;
   display: flex;
   justify-content: center;
   bottom: 25px;
 }
 
-.activity-title{
+.activity-title {
   font-size: 20px;
   margin: 0;
 }
