@@ -393,69 +393,35 @@ nav::after {
   }
 }
 
-.card {
-  /* margin: 20px; */
-  width: 18rem;
-  height: 20rem;
-  justify-content: center;
-  padding: 0px;
-  margin: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  transition: ease-in-out 400ms;
-  border-radius: 10px;
-}
-
-.card:hover {
+.project-card:hover {
   background-color: #212529ab;
 }
 
-.card div {
-  position: relative;
-  bottom: 100px;
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity ease-in-out 400ms, transform ease-in-out 400ms;
-}
-
-.card div i:hover {
+.project-links i:hover {
   color: #e31b6d;
 }
 
-.card i {
+.project-links i {
   color: white;
 }
 
-.card:hover div {
+.project-card:hover div {
   opacity: 1;
   transform: scale(1);
 }
 
-.card img {
+.project-card img {
   opacity: 1;
   transition: opacity ease-in-out 400ms;
 }
 
-.card:hover img {
+.project-card:hover img {
   opacity: 0.2;
 }
 
-.card:hover p {
+.project-card:hover p {
   color: #09d3db;
   transition: 0.4s ease-in-out;
-}
-
-.card-img-top {
-  width: 14rem;
-  height: 14rem;
-  transform: translate(14%, 10%);
-}
-
-.card div a {
-  text-decoration: none;
-}
-
-.card i {
-  padding: 0px 10px;
 }
 
 .award-card {
@@ -554,10 +520,43 @@ nav::after {
 .fade-in {
   opacity: 0;
   transform: scale(0);
-  transition: 1000ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 .fade-in.appear {
   transform: scale(1);
   opacity: 1;
+}
+
+.project-card{
+  width: 16rem;
+  height: 17.5rem;
+  padding: 20px 28px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img{
+  height: auto; 
+  width: 200px;
+}
+
+.project-links{
+  position: relative;
+  bottom: 110px;
+  left: 50px;
+  opacity: 0;
+}
+
+.project-links a{
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.project-card p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 25px;
 }
