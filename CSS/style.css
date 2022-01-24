@@ -46,16 +46,6 @@ body {
 nav {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-/* 
-nav::after {
-  content: "";
-  height: 3px;
-  width: 100%;
-  background-color: #09d3db;
-  position: absolute;
-  bottom: 0;
-  display: block;
-} */
 
 .nav-link:hover {
   text-decoration: none;
@@ -108,9 +98,8 @@ nav::after {
   transform: rotate(90deg);
 }
 
-.intro button h6 {
+.intro button p {
   margin-right: 10px;
-  margin-top: 4px;
   float: left;
   font-family: "Montserrat";
 }
@@ -164,6 +153,10 @@ nav::after {
   background-color: #212529;
 }
 
+.skillbox p{
+  margin-top: 15px;
+}
+
 .row .col-md-3:last-child {
   margin-bottom: 5px;
 }
@@ -199,14 +192,14 @@ nav::after {
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
-.timeline-content h2 {
+.timeline-content .timeline-header {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
   color: #09d3db;
 }
-.timeline-content h6 {
+.timeline-content .timeline-place {
   font-family: "Montserrat";
   color: #e31b6d;
 }
@@ -276,18 +269,6 @@ nav::after {
   .timeline ul li:hover::before {
     background-color: #09d3db;
   }
-  /* .title::after {
-    display: block;
-    width: 8%;
-    height: 3px;
-    left: 46%;
-    margin-top: 5px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: #212529;
-    content: "";
-  } */
 
   .title-underline.title-appear {
     transform: translateX(0);
@@ -358,18 +339,7 @@ nav::after {
   .section {
     padding-top: 15%;
   }
-  /* .title::after {
-    display: block;
-    width: 30%;
-    height: 3px;
-    left: 35%;
-    margin-top: 5px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: #212529;
-    content: "";
-  } */
+
 
   .title-underline.title-appear {
     transform: translateX(0);
@@ -409,6 +379,7 @@ nav::after {
   opacity: 1;
   transform: scale(1);
 }
+
 
 .project-card img {
   opacity: 1;
@@ -489,7 +460,7 @@ nav::after {
 
 .activities p {
   font-family: "Montserrat";
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 .activity{
   margin-top: 15px;
@@ -547,6 +518,8 @@ nav::after {
   bottom: 110px;
   left: 50px;
   opacity: 0;
+  transform: scale(0);
+  transition: 400ms ease-in;
 }
 
 .project-links a{
@@ -559,4 +532,9 @@ nav::after {
   display: flex;
   justify-content: center;
   bottom: 25px;
+}
+
+.activity-title{
+  font-size: 20px;
+  margin: 0;
 }
