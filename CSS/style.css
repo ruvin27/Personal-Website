@@ -151,6 +151,7 @@ nav {
   margin-right: 25px;
   color: aliceblue;
   background-color: #212529;
+  cursor: pointer;
 }
 
 .skillbox p {
@@ -232,16 +233,24 @@ nav {
     position: relative;
     margin-bottom: 0px;
   }
+  .timeline-box.appear:nth-child(odd){
+    transform: translateX(-30px);
+    transition: 500ms ease-in;
+  }
+  .timeline-box.appear:nth-child(even){
+    transform: translateX(30px);
+    transition: 500ms ease-in;
+  }
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
-    transform: translateX(-30px);
+    transform: translateX(-300px);
     border-radius: 20px 0px 20px 20px;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
-    transform: translateX(30px);
+    transform: translateX(300px);
     border-radius: 0px 20px 20px 20px;
   }
   .timeline ul li::before {
@@ -312,6 +321,14 @@ nav {
     /* transform: translateX(-30px); */
     border-radius: 0px 20px 20px 20px;
   }
+  .timeline-box.appear{
+    transform: translateX(0);
+    transition: 500ms ease-in;
+  }
+  .timeline-box{
+    transform: translateX(150px);
+  }
+
   .timeline-content .date {
     color: white;
   }
@@ -515,7 +532,7 @@ nav {
 .project-links {
   position: relative;
   bottom: 110px;
-  left: 50px;
+  left: 48px;
   opacity: 0;
   transform: scale(0);
   transition: 400ms ease-in;

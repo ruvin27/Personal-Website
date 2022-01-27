@@ -108,3 +108,23 @@ appearOptions);
 titleUnderlines.forEach((underline) => {
   onTitlesUnderlines.observe(underline);
 });
+
+const timelines = document.querySelectorAll(".timeline-box");
+const onTimeline = new IntersectionObserver(function (
+  entries,
+  onTimeline
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      onTimeline.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+timelines.forEach((timeline) => {
+  onTimeline.observe(timeline);
+});
