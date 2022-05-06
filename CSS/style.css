@@ -394,7 +394,6 @@ nav {
 
 .project-card:hover div {
   opacity: 1;
-  transform: scale(1);
 }
 
 .project-card img {
@@ -422,7 +421,7 @@ nav {
   font-family: "Montserrat";
   color: white;
   margin-bottom: 20px;
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   opacity: 0;
   transform: translateY(100%);
 }
@@ -507,7 +506,7 @@ nav {
 .fade-in {
   opacity: 0;
   /* transform: scale(0); */
-  transition: 1000ms ease-in;
+  transition: 500ms ease-in-out;
 }
 
 .fade-in.appear {
@@ -534,8 +533,7 @@ nav {
   bottom: 110px;
   left: 48px;
   opacity: 0;
-  transform: scale(0);
-  transition: 400ms ease-in;
+  transition: 400ms ease-in-out;
 }
 
 .project-links a {
