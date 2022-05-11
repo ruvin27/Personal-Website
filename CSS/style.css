@@ -616,15 +616,15 @@ figure {
   pointer-events: none;
 }
 
-.links a{
+/* .links a{
   text-decoration: none;
   color: white;
-}
+} */
 
 .links:hover {
   background-color: white;
 }
 
-.links:hover a{
+.links:hover {
   color: black;
 }
