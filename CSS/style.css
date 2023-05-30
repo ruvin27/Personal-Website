@@ -205,6 +205,11 @@ nav {
   color: #e31b6d;
   font-weight: 500;
 }
+
+.timeline-content .timeline-grade {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
 .timeline-content p {
   font-size: 16px;
   line-height: 30px;
@@ -217,6 +222,11 @@ nav {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+.timeline-grade {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -443,7 +453,7 @@ nav {
 }
 
 .award-card div {
-  transform: translateY(100%);
+  transform: translateY(50px);
 }
 
 .award-card:hover {
