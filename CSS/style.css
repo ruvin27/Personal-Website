@@ -53,7 +53,6 @@ nav {
 }
 
 .title {
-  /* padding: 10px; */
   transform: translateX(-50%);
   opacity: 0;
   margin-bottom: 5px;
@@ -116,7 +115,6 @@ nav {
 
 .aboutme-card {
   margin-top: 20px;
-  /* padding: 20px 30px 0 0; */
   padding-bottom: 15px;
   background-color: #fdfdfdd7;
   border-radius: 10px;
@@ -125,11 +123,9 @@ nav {
 
 .aboutimg {
   margin-top: 4%;
-  /* position: relative; */
-  height: 315px;
+  height: 250px;
   padding: 10px;
   border-radius: 20px;
-  /* border: 2px solid black; */
 }
 
 .margin5 {
@@ -163,8 +159,6 @@ nav {
 }
 
 .timeline-container {
-  /* min-height: 100vh; */
-  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +169,6 @@ nav {
 .timeline {
   width: 80%;
   height: auto;
-  /* max-width: 1000px; */
   margin: 0 auto;
   position: relative;
 }
@@ -187,7 +180,6 @@ nav {
   padding: 20px;
   background-color: #1e1f22;
   color: white;
-  /* border-radius: 10px; */
   margin-bottom: 10px;
 }
 .timeline ul li:last-child {
@@ -197,7 +189,6 @@ nav {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
-  /* margin-bottom: 10px; */
   color: #09d3db;
 }
 .timeline-content .timeline-place {
@@ -233,7 +224,6 @@ nav {
     position: absolute;
     top: 0;
     left: 51.2%;
-    /* transform: translateX(-50%); */
     width: 2px;
     height: 100%;
     background-color: gray;
@@ -314,21 +304,16 @@ nav {
     content: "";
     position: absolute;
     top: 0;
-    /* left: 51.8%; */
-    /* transform: translateX(-50%); */
     width: 2px;
     height: 100%;
     background-color: gray;
   }
   .timeline ul li {
-    /* width: 50%; */
     position: relative;
-    /* margin-bottom: 50px; */
   }
   .timeline ul li {
     float: left;
     clear: right;
-    /* transform: translateX(-30px); */
     border-radius: 0px 20px 20px 20px;
   }
   .timeline-box.appear{
@@ -485,7 +470,6 @@ nav {
 
 .activities p {
   font-family: "Montserrat";
-  /* font-size: 15px; */
 }
 .activity {
   margin-top: 15px;
@@ -515,12 +499,10 @@ nav {
 
 .fade-in {
   opacity: 0;
-  /* transform: scale(0); */
   transition: 800ms ease-in-out;
 }
 
 .fade-in.appear {
-  /* transform: scale(1); */
   opacity: 1;
 }
 
@@ -591,7 +573,6 @@ figure {
   height: 340px;
   transition: 400ms ease-in-out;
   padding-top: 15px;
-  /* transform: translateX(-10px); */
   margin-inline-start: -15px;
 }
 
@@ -625,11 +606,6 @@ figure {
   opacity: 0;
   pointer-events: none;
 }
-
-/* .links a{
-  text-decoration: none;
-  color: white;
-} */
 
 .links:hover {
   background-color: white;
